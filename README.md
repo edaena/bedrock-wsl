@@ -1,7 +1,6 @@
 # bedrock-wsl
 Instructions for a bedrock walkthrough on wsl
 
-
 #### System:
 Windows
 Version 1909 
@@ -46,5 +45,22 @@ sudo cp tiller /usr/local/bin
 #### Terraform
 ```
 cd tmp
-
+wget -q https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+unzip terraform_0.12.18_linux_amd64.zip
+sudo cp terraform /usr/local/bin
 ```
+
+#### Kubectl
+```
+cd tmp
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo cp kubectl /usr/local/bin
+```
+
+#### Azure cli
+```
+cd tmp
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+Resource [Install Azure CLI with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest#manual-install-instructions)
