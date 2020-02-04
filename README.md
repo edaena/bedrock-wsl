@@ -1,18 +1,19 @@
-# bedrock-wsl
-Instructions for installing the tools for a Bedrock Walkthrough on WSL.
+# Bedrock setup
+Instructions for installing the tools for a Bedrock Walkthrough.
 
+### WSL
 #### System:
 Windows
 Version 1909 
 Build: 18363.535
 
-#### WSL:
+#### WSL Version:
 Ubuntu WSL 18.04. [Download from the Microsoft Store](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q).
 
 Directory example:
 `C:\Users\me\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows...`
 
-#### Unzip
+### Unzip
 ```
 sudo apt-get install unzip zip 
 ```
